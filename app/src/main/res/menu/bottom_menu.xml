@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app:menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="@color/cardview_100">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/round_home_20"
+        android:iconTint="@color/black"
+        android:title="Início"
+        app:cnb_iconColor="@color/cardview_100" />
+
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/round_settings_20"
+        android:iconTint="@color/black"
+        android:title="Filtro"
+        app:cnb_iconColor="@color/cardview_100" />
+
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/round_settings_20"
+        android:iconTint="@color/black"
+        android:title="Configuração"
+        app:cnb_iconColor="@color/cardview_100" />
+
+
+</app:menu>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Calculator_hours_worked</string>
+    <string name="valorSalario">R$0,00</string>
+    <string name="valorOculto">******</string>
+    <string name="salario">Salário:</string>
+    <string name="valorProduto">Valor:</string>
+    <string name="resultado">Resultado</string>
+    <string name="resultado_texto">O produto informado equivale horas de trabalho.</string>
+    <string name="tempo_trabalho">8</string>
+
+    <string name="minutos">Minutos</string>
+    <string name="horas">Horas</string>
+    <string name="dias">Dias</string>
+    <string name="semanas">Semanas</string>
+    <string name="meses">Meses</string>
+    <string name="anos">Anos</string>
+    <string name="detalhes">Detalhes</string>
+</resources>

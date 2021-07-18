@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Title" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/purple_800</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TitleCardView" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="TitleCardViewNight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/cardview_100</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="SubTitleCardView" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:padding">4dp</item>
+    </style>
+    <style name="SubTitleCardViewBold" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:padding">4dp</item>
+    </style>
+    <style name="SubTitleCardViewNight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/cardview_100</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+
+
+    <style name="TitleCardGrid" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="SubTitleCardGrid" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/subtitle_cardview_50</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="EditTextCardView" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:backgroundTint">@color/cardview_100</item>
+    </style>
+
+</resources>

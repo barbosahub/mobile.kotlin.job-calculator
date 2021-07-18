@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_0"
+        android:orientation="vertical"
+
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background"
+            app:title="CustoTempo"
+            app:titleTextColor="@color/white" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageTempo"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/time" />
+
+                    <TextView
+                        style="@style/Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gerencie melhor seu tempo." />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/cardviewRenda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@color/cardview_200"
+                        card_view:cardCornerRadius="20dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardview_200"
+                            android:orientation="vertical"
+
+                            android:padding="15dp">
+
+                            <TextView
+                                style="@style/TitleCardView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Renda Mensal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txtSalario"
+                                    style="@style/SubTitleCardView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/salario" />
+
+
+                                <EditText
+                                    android:id="@+id/edtValorSalario"
+                                    style="@style/EditTextCardView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:inputType="numberPassword"
+                                    android:padding="10dp" />
+
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/imageVer"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/round_visibility_black_18"
+                                    android:tint="@color/white" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardviewProduto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@color/cardview_200"
+                        app:cardCornerRadius="20dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardview_100"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                style="@style/TitleCardView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Produto" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txtValorProduto"
+                                    style="@style/SubTitleCardView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    android:text="@string/valorProduto" />
+
+
+                                <EditText
+                                    android:id="@+id/edtProduto"
+                                    style="@style/EditTextCardView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:hint="@string/valorSalario"
+                                    android:padding="10dp" />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/imageDelete"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/baseline_delete_black_18"
+                                    android:tint="@color/white" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/layoutResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardviewResultado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@color/cardview_200"
+                        app:cardCornerRadius="20dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardview_300"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                style="@style/TitleCardView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/resultado" />
+
+                            <TextView
+                                style="@style/SubTitleCardView"
+                                android:id="@+id/txtResultado"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/resultado_texto" />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutDetalhes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_viewTempo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@color/cardview_200"
+                        app:cardCornerRadius="20dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardview_0"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <TextView
+                                style="@style/TitleCardViewNight"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/detalhes" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtMinutos"
+                                        style="@style/TitleCardGrid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:maxLength="5"
+
+                                        android:maxLines="1"
+                                        android:text="@string/tempo_trabalho"
+                                        android:textColor="@color/cardview_100" />
+
+                                    <TextView
+                                        style="@style/SubTitleCardGrid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/minutos" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtHoras"
+                                        style="@style/TitleCardGrid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tempo_trabalho"
+                                        android:textColor="@color/cardview_200" />
+
+                                    <TextView
+                                        style="@style/SubTitleCardGrid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/horas" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtDias"
+                                        style="@style/TitleCardGrid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tempo_trabalho"
+                                        android:textColor="@color/cardview_300" />
+
+                                    <TextView
+                                        style="@style/SubTitleCardGrid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/dias" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/TitleCardGrid"
+                                        android:id="@+id/txtSemanas"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tempo_trabalho"
+                                        android:textColor="@color/cardview_100" />
+
+                                    <TextView
+                                        style="@style/SubTitleCardGrid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/semanas" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/TitleCardGrid"
+                                        android:id="@+id/txtMeses"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tempo_trabalho"
+                                        android:textColor="@color/cardview_200" />
+
+                                    <TextView
+                                        style="@style/SubTitleCardGrid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/meses" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/TitleCardGrid"
+                                        android:id="@+id/txtAnos"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tempo_trabalho"
+                                        android:textColor="@color/cardview_300" />
+
+                                    <TextView
+                                        style="@style/SubTitleCardGrid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/anos" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutEmpty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageEmpty"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/empty" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <com.ismaeldivita.chipnavigation.ChipNavigationBar
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:elevation="16dp"
+                android:gravity="center"
+                android:padding="8dp"
+                app:cnb_menuResource="@menu/bottom_menu" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
